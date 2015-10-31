@@ -21,6 +21,6 @@ deploy:
   password: Sept2015!
   api: https://api.run.pivotal.io
   organization: VzWebCrawl
-  space: stage
+  space: vzsample
 
 sudo: required
