@@ -1,19 +1,10 @@
-<html>
-<head>
-<title>Security Information</title>
-</head>
-<body>
+<?php
+$selected_page = "index";
+require_once "header.php";
+?>
 				
-
-
-				
-
-<table>
-	<tr><td> <a href="/page3.php">Page 3</a></td></tr>
-	<tr><td> <a href="/page2.php">Page 2</a></td></tr>
-</table>
-<center><h1>Security Information</h1></center>
-This page consists security information
+<center><h1>View Customers Information</h1></center>
+<p style="text-align: center">To view the sensitive Customers data</p>
 <?php
 $data = array(
 	'User' => array(1, 2, 3, 4, 5),
@@ -52,9 +43,12 @@ foreach ($data as $key => $values) {
 	$body .= "</tr>";
 }
 ?>
-<table border=1>
+<table border=1  class="table table-rwd table-bordered table-striped">
 <tr><?=$head?></tr>
 <?=$body?>
 </table>
-</body>
-</html>
+
+<?php
+require_once "footer.php";
+?>
+
